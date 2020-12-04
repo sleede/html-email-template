@@ -1,0 +1,25 @@
+<mjml>
+  <mj-head>
+    <mj-title></mj-title>
+    <mj-preview></mj-preview>
+    <mj-attributes>
+      <mj-all padding="0" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      
+    </mj-style>
+    <mj-style>
+      @media (max-width: 481px) {
+        
+      }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body>
+    <mj-section>
+      <mj-column width="">
+        
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

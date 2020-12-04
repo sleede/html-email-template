@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-title>Media query</mj-title>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text font-size="24px" color="#184C5F" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .title div {
+        font-size: 14px !important;
+        font-weight: 200 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.4px !important;
+      }
+      .mobile table {
+        display: none !important;
+        mso-hide: all !important;
+      }
+    </mj-style>
+    <mj-style>
+      @media (max-width: 481px) {
+        .paragraph div {
+          font-size: 16px !important;
+          line-height: 22px !important;
+          color: tomato !important;
+        }
+        .desktop table {
+          display: none !important;
+          mso-hide: all !important;
+        }
+        .mobile table {
+          display: table !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+  
+    <mj-wrapper background-color="#FFFFFF" padding="24px">
+
+      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+        <mj-group>
+          <mj-column width="80%" padding="8px 0" vertical-align="middle">
+            <mj-text css-class="title">
+              Media query
+            </mj-text>
+          </mj-column>
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image src="./assets/DeviceMobile.png" alt="" css-class="mobile" width="12px" align="right" />
+            <mj-image src="./assets/Desktop.png" alt="" css-class="desktop" width="20px" align="right" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section background-color="#F9F3F1" border-radius="0 0 8px 8px">
+        <mj-column padding="40px 24px">
+          <mj-text css-class="paragraph" line-height="30px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

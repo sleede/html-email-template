@@ -1,0 +1,43 @@
+<mjml>
+  <mj-head>
+    <mj-title>Polices distantes</mj-title>
+    <mj-font name="Creepster" href="https://fonts.googleapis.com/css2?family=Creepster" />
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text font-size="24px" color="#184C5F" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .title div {
+        font-size: 14px !important;
+        font-weight: 200 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.4px !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+  
+    <mj-wrapper background-color="#FFFFFF" padding="24px">
+
+      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+        <mj-group>
+          <mj-column padding="8px 0" vertical-align="middle">
+            <mj-text css-class="title">
+              Polices distantes
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section background-color="#F9F3F1" border-radius="0 0 8px 8px">
+        <mj-column padding="40px 24px">
+          <mj-text font-family="Creepster, sans-serif" font-size="72px" color="tomato" align="center">
+            custom font
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

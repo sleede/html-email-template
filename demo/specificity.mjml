@@ -1,0 +1,57 @@
+<mjml>
+  <mj-head>
+    <mj-title>Règles de spécificité</mj-title>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text font-size="16px" color="#184C5F" padding-bottom="8px" />
+      <mj-class name="my-class" font-size="32px" color="#655457" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .title div {
+        font-size: 14px !important;
+        font-weight: 200 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.4px !important;
+      }
+      .my-css-class div {
+        font-size: 64px !important;
+        color: tomato !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+  
+    <mj-wrapper background-color="#FFFFFF" padding="24px">
+
+      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+        <mj-column padding="8px 0 0">
+          <mj-text css-class="title">
+            règles de spécificité
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#F9F3F1" border-radius="0 0 8px 8px">
+        <mj-column padding="24px">
+          <mj-text font-size="13px" color="#000000">
+            MJML definition
+          </mj-text>
+          <mj-text>
+            &lt;mj-attribute&gt;
+          </mj-text>
+          <mj-text mj-class="my-class">
+            &lt;mj-class&gt;
+          </mj-text>
+          <mj-text mj-class="my-class" font-size="40px" color="#b25b4f">
+            attribut inline
+          </mj-text>
+          <mj-text mj-class="my-class" font-size="40px" color="#b25b4f" css-class="my-css-class">
+            &lt;mj-style&gt;
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>
