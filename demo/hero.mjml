@@ -1,0 +1,29 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all padding="0" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="palevioletred">
+    <mj-hero mode="fluid-height" background-width="600px" background-height="469px" background-url="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg" background-color="#2a3448" padding="100px 0px" width="100%">
+      <mj-text padding="20px" color="#ffffff" font-family="Helvetica" align="center" font-size="45px" line-height="45px" font-weight="900">
+        GO TO SPACE
+      </mj-text>
+      <mj-button href="https://mjml.io/" align="center">
+        ORDER YOUR TICKET NOW
+      </mj-button>
+    </mj-hero>
+
+    <mj-section>
+      <mj-column padding="16px 0">
+        <mj-divider border-color="chartreuse" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image src="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg" alt="" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -4,7 +4,7 @@
     <mj-font name="Creepster" href="https://fonts.googleapis.com/css2?family=Creepster" />
     <mj-attributes>
       <mj-all padding="0" />
-      <mj-text font-size="24px" color="#184C5F" />
+      <mj-text font-size="16px" color="#184C5F" />
     </mj-attributes>
     <mj-style inline="inline">
       .title div {
@@ -13,13 +13,35 @@
         text-transform: uppercase !important;
         letter-spacing: 0.4px !important;
       }
+      .text-right {
+        padding: 8px 0 0 16px !important;
+      }
+      .text-left {
+        padding: 8px 16px 0 0 !important;
+      }
+      .text-left div {
+        text-align: right !important;
+      }
+    </mj-style>
+    <mj-style>
+      @media (max-width: 480px) {
+        .text-right {
+          padding: 8px 0 0 !important;
+        }
+        .text-left {
+          padding: 8px 0 0 !important;
+        }
+        .text-left div {
+          text-align: left !important;
+        }
+      }
     </mj-style>
   </mj-head>
   <mj-body>
   
-    <mj-wrapper background-color="#FFFFFF" padding="24px">
+    <mj-wrapper background-color="#F9F3F1" padding="24px">
 
-      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+      <mj-section background-color="#FFFFFF" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
         <mj-group>
           <mj-column padding="8px 0" vertical-align="middle">
             <mj-text css-class="title">
@@ -29,28 +51,48 @@
         </mj-group>
       </mj-section>
 
-      <mj-section background-color="#F9F3F1" padding="24px">
-        <mj-column width="50%" padding="8px">
-          <mj-image src="./assets/SaharaDesert.jpg" alt="" />
+      <mj-section background-color="#FFFFFF" padding="24px">
+        <mj-column width="50%">
+          <mj-image src="./assets/MtEtna.jpg" alt="Mt Etna" fluid-on-mobile="true" />
         </mj-column>
 
-        <mj-column width="50%" padding="8px">
-          <mj-text line-height="30px">
+        <mj-column width="50%">
+          <mj-text css-class="text-right">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </mj-text>
         </mj-column>
       </mj-section>
 
-      <mj-section direction="rtl" background-color="#F9F3F1" border-radius="0 0 8px 8px" padding="24px">
-        <mj-column width="50%" padding="8px">
-          <mj-image src="./assets/GossesBluffRange.jpg" alt="" />
+      <mj-section direction="rtl" background-color="#FFFFFF" padding="0 24px 24px">
+        <mj-column width="50%">
+          <mj-image src="./assets/GossesBluffRange.jpg" alt="Gosses Bluff Range" fluid-on-mobile="true" />
         </mj-column>
 
-        <mj-column width="50%" padding="8px">
-          <mj-text line-height="30px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <mj-column width="50%">
+          <mj-text css-class="text-left">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </mj-text>
         </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#FFFFFF">
+        <mj-column>
+          <mj-divider border-color="#89A0A8" border-width="1px" width="50%" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#FFFFFF" border-radius="0 0 8px 8px" padding="16px">
+        <mj-group>
+
+          <mj-column padding="8px">
+            <mj-image src="./assets/SaharaDesert.jpg" alt="Sahara Desert" />
+          </mj-column>
+
+          <mj-column padding="8px">
+            <mj-image src="./assets/YukonDelta.jpg" alt="Yukon Delta" />
+          </mj-column>
+
+        </mj-group>
       </mj-section>
 
     </mj-wrapper>

@@ -1,0 +1,161 @@
+<mjml>
+  <mj-head>
+    <mj-title>Media query</mj-title>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-text color="#184C5F" font-family="Ubuntu, Arial, Helvetica, Sans-serif" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .link {
+        color: tomato !important;
+      }
+      h3 {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        line-height: 30px !important;
+        text-transform: capitalize !important;
+        padding-bottom: 8px !important;
+      }
+      p {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 16px !important;
+        font-weight: 100 !important;
+        line-height: 24px !important;
+        letter-spacing: 0.03em !important;
+      }
+      .footer div {
+        color: tomato !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        line-height: 20px !important;
+        text-align: center !important;
+      }
+      .px-lg {
+        padding: 0 100px !important;
+      }
+      .text-align-switch h3,
+      .text-align-switch p {
+        text-align: right !important;
+      }
+    </mj-style>
+    <mj-style>
+      @media (max-width: 480px) {
+        .text-align-switch h3,
+        .text-align-switch p {
+          text-align: left !important;
+        }
+        .px-lg {
+          padding: 0 24px !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#F9F3F1">
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-weight="100" padding="24px 0 8px">
+          <a href="#" class="link">voir ce mail dans le navigateur</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="#FFFFFF" border-radius="8px">
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image src="./assets/tp_logo.png" alt="" width="48px" align="left" border-radius="8px 0 0 0" />
+          </mj-column>
+          <mj-column vertical-align="bottom">
+            <mj-text align="right" padding="8px" font-size="10px"font-weight="100" font-style="italic">
+              Photo by Paweł Czerwiński on <a href="https://unsplash.com/photos/bX9B9c-YasY" style="color: #184C5F;">Unsplash</a>
+            </mj-text>            
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-image src="./assets/tp_image_header.png" alt="" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="40px 24px">
+        <mj-column>
+          <mj-text align="center" font-size="36px" line-height="48px">
+            Gravida in fermentum et sollicitudin ac. Amet risus nullam eget felis eget nunc lobortis mattis aliquam.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-button href="#" inner-padding="16px 48px" background-color="tomato" color="#FFFFFF" border-radius="64px" font-size="24px" font-weight="700">
+            Obvious CTA
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="72px 12px 0">
+        <mj-column padding="0 12px 12px">
+          <mj-image src="./assets/tp_image_article01.png" alt="" fluid-on-mobile="true" />
+        </mj-column>
+
+        <mj-column padding="0 12px">
+          <mj-text>
+            <h3>vulputate tempor nulla</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas diam in arcu cursus euismod quis viverra.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section direction="rtl" padding="28px 12px 60px">
+        <mj-column padding="0 12px 12px">
+          <mj-image src="./assets/tp_image_article02.png" alt="" fluid-on-mobile="true" />
+        </mj-column>
+
+        <mj-column padding="0 12px">
+          <mj-text css-class="text-align-switch">
+            <h3>risus quis varius</h3>
+            <p>Laoreet suspendisse interdum consectetur libero id faucibus. Rhoncus aenean vel elit scelerisque mauris pellentesque. Sed odio morbi quis commodo.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section>
+      <mj-column padding="40px 0 0">
+        <mj-social icon-size="48px">
+          <mj-social-element href="https://medium.com/" src="./assets/tp_medium.png" />
+          <mj-social-element href="https://medium.com/" src="./assets/tp_twitter.png" padding="0 48px" />
+          <mj-social-element href="https://medium.com/" src="./assets/tp_linkedin.png" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="32px 0">
+      <mj-column>
+        <mj-divider align="center" width="192px" border-width="1px" border-color="tomato" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-text css-class="px-lg footer">
+          Vous recevez cet e-mail parce que vous avez créé un compte sur <a href="#" class="link">www.tinlinlin.com</a> ou à partir de l'application mobile.<br />
+          Si vous ne souhaitez plus recevoir d'informations de notre part, mettez à jour vos <a href="#" class="link">préférences</a> ou <a href="#" class="link">désabonnez-vous</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column padding="32px 0 72px">
+        <mj-social icon-size="48px">
+          <mj-social-element href="#" src="./assets/tp_logo.png" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

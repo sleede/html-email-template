@@ -17,9 +17,9 @@
   </mj-head>
   <mj-body>
   
-    <mj-wrapper background-color="#FFFFFF" padding="24px">
+    <mj-wrapper background-color="#F9F3F1" padding="24px">
 
-      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+      <mj-section background-color="#FFFFFF" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
         <mj-group>
           <mj-column padding="8px 0" vertical-align="middle">
             <mj-text css-class="title">
@@ -29,7 +29,7 @@
         </mj-group>
       </mj-section>
 
-      <mj-section background-color="#F9F3F1" border-radius="0 0 8px 8px">
+      <mj-section background-color="#FFFFFF" border-radius="0 0 8px 8px">
         <mj-column padding="40px 24px">
           <mj-text font-family="Creepster, sans-serif" font-size="72px" color="tomato" align="center">
             custom font

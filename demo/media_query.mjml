@@ -18,7 +18,7 @@
       }
     </mj-style>
     <mj-style>
-      @media (max-width: 481px) {
+      @media (max-width: 480px) {
         .paragraph div {
           font-size: 16px !important;
           line-height: 22px !important;
@@ -36,9 +36,9 @@
   </mj-head>
   <mj-body>
   
-    <mj-wrapper background-color="#FFFFFF" padding="24px">
+    <mj-wrapper background-color="#F9F3F1" padding="24px">
 
-      <mj-section background-color="#F9F3F1" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
+      <mj-section background-color="#FFFFFF" padding="0 16px 0 24px" border-radius="8px 8px 0 0" border-bottom="1px solid #89A0A8">
         <mj-group>
           <mj-column width="80%" padding="8px 0" vertical-align="middle">
             <mj-text css-class="title">
@@ -52,7 +52,7 @@
         </mj-group>
       </mj-section>
 
-      <mj-section background-color="#F9F3F1" border-radius="0 0 8px 8px">
+      <mj-section background-color="#FFFFFF" border-radius="0 0 8px 8px">
         <mj-column padding="40px 24px">
           <mj-text css-class="paragraph" line-height="30px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

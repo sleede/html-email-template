@@ -2,11 +2,29 @@
 
 [création](#mjml) | [test](#testi)
 
+## Ressources
+
+<details>
+<summary>+/-</summary>
+
+- [emailclientmarketshare.com](http://emailclientmarketshare.com/) :bar_chart:
+- [campaignmonitor.com/css/](https://www.campaignmonitor.com/css/) :vertical_traffic_light:
+- [caniemail.com](https://www.caniemail.com/) :vertical_traffic_light:
+- [templates.mailchimp.com](https://templates.mailchimp.com/) :bookmark_tabs:
+- [mailjet.com/resources](https://www.mailjet.com/resources/) :bookmark_tabs:
+- [litmus.com/resources](https://www.litmus.com/resources/) :bookmark_tabs:
+- [emailonacid.com/resources](https://www.emailonacid.com/resources/) :bookmark_tabs:
+- [reallygoodemails.com](https://reallygoodemails.com/) :art:
+- [dribbble.com/stories](https://dribbble.com/stories/2020/12/03/email-design-tips) :art:
+
+</details>
+
 # MJML
 
 MJML est un langage de balisage *open-source* créer par [Mailjet](https://www.mailjet.com/).  
 Grâce à une syntaxe simple et un ensemble de composants, MJML permet de rapidement créer des emails HTML *responsive* et directement compatibles avec une grande majorité de clients mail.  
-C'est le moteur MJML qui se charge de compiler le template en HTML.
+C'est le moteur MJML qui se charge de compiler le template en HTML.  
+
 ![code](demo/assets/code.png)
 
 ## Documentation
@@ -26,6 +44,8 @@ C'est le moteur MJML qui se charge de compiler le template en HTML.
 - \+ les outils développés par la [communauté](https://mjml.io/community)...
 
 </details>
+
+:warning: Il est préférable de générer une version HTML *minifiée* car elle supprime les attributs `style` vides qui peuvent poser problème sur *Outlook*.
 
 ## En pratique
 
@@ -56,8 +76,9 @@ C'est le moteur MJML qui se charge de compiler le template en HTML.
   
   <!-- corps du mail -->
   <mj-body>
-    <!--  -->
+    <!-- division verticale -->
     <mj-section>
+      <!-- division horizontale -->
       <mj-column>
         <mj-text mj-class="header">Hello World !</mj-text>
         <mj-text css-class="primary">Lorem ipsum dolor sit amet...</mj-text>
@@ -73,12 +94,14 @@ C'est le moteur MJML qui se charge de compiler le template en HTML.
 MJML va générer une structure de plusieurs éléments HTML en convertissant un composant.  
 :warning: Une `<css-class>` est toujours appliquée à l'élément parent. Pour appliquer correctement un style il va donc parfois être nécessaire d'inspecter le code généré pour cibler le bon élément enfant.  
 :warning: Comme les styles *inline* sont très utilisés dans les emails HTML il est indispensable de toujours ajouter `!important`.  
-![specificity](./demo/assets/specificity.gif)  
+
+![specificity](./demo/assets/specificity.png)  
 [specificity.mjml](./demo/specificity.mjml) : règles de spécificité.
 
 ---
 
 #### Unitées :
+
 La largeur des `<mj-column>` est en **pourcentages** (%) mais pour tout le reste il semble préférable de rester en **pixels** (px).  
 Un exemple : *Outlook* va transformer un *padding* définit en pourcentages... en pouces, et d'une façon *étrange*.  
 L'unité `em` peut également être utilisée sur tout les clients mail [(source)](https://www.caniemail.com/features/css-unit-em/).
@@ -86,6 +109,7 @@ L'unité `em` peut également être utilisée sur tout les clients mail [(source
 ---
 
 #### Formats d'images :
+
 - `.gif`(pas d'animation sur Outlook)
 - `.png` (même avec alpha)
 - `.jpeg`
@@ -99,20 +123,15 @@ L'unité `em` peut également être utilisée sur tout les clients mail [(source
 #### Responsive :
 
 MJML met à disposition un composant `<mj-column>` au comportement *responsive*.  
-Placés dans une `<mj-section>`, les `<mj-column>` se partagent la largeur de l'email sur desktop et vont automatiquement s'empiler verticalement sur mobile. La largeur des `<mj-column>` est définie en pourcentage sans que la somme ne dépasse les 100%. Par défaut l'espace est réparti uniformément sur chaque `<mj-column>`.  
+Placés dans une `<mj-section>`, les `<mj-column>` se partagent sa largeur sur desktop et vont automatiquement s'empiler verticalement sur mobile. La largeur des `<mj-column>` est définie en pourcentage sans que la somme ne dépasse les 100%. Par défaut l'espace est réparti uniformément sur chaque `<mj-column>`.  
 Un composant `<mj-group>` englobant des `<mj-column>` va annuler ce comportement responsive pour les grader côte à côte sur mobile.  
+
 ![columns](./demo/assets/columns.gif)  
 [columns.mjml](./demo/columns.mjml) : layout en 2 colonnes.
 
 ---
 
-## Exemples
-
-<details>
-<summary>+/-</summary>
-
 #### CSS Media query
-
 
 Support : [plutôt bon](https://www.caniemail.com/features/css-at-media/).  
 Il faut bien les placer dans une balise `<mj-style>` **SANS** l'attribut `<inline>`. Vous pouvez créer plusieurs balises `<mj-style>` dans `<mj-head>`.  
@@ -130,7 +149,7 @@ Il faut bien les placer dans une balise `<mj-style>` **SANS** l'attribut `<inlin
 
   <!-- mj-style SANS l'attribut inline -->
   <mj-style>
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
       .paragraph div {
         font-size: 16px !important;
         color: tomato !important;
@@ -177,14 +196,14 @@ Utilisez la balise `<mj-font>` dans `<mj-head>` et pointez l'attribut `href` ver
 </mj-body>
 ```
 
-![custom_font](./demo/assets/custom_font.gif)  
+![custom_font](./demo/assets/custom_font.png)  
 [custom_font.mjml](./demo/custom_font.mjml) : appliquer une police distante.
 
 ---
 
 #### Image de fond (fenêtre client)
 
-Support : bon... sauf sur Outlook (Windows) mais possibilité de faire mieux directement dans le html.
+Support : bon... sauf sur Outlook (Windows) mais possibilité de faire mieux directement dans le html.  
 Utilisez l'attribut `full-width="full-width"` sur la balise `<mj-wrapper>` et pointez l'attribut `background-url` vers le fichier image.
 
 ```html
@@ -195,17 +214,22 @@ Utilisez l'attribut `full-width="full-width"` sur la balise `<mj-wrapper>` et po
   </mj-body>
 ```
 
-![background_image](./demo/assets/background_image.gif)  
+![background_image](./demo/assets/background_image.png)  
 [background_image.mjml](./demo/background_image.mjml) : appliquer une image de fond sur toute la fenêtre du client.
 
 ---
 
-#### Dark mode
+#### Exemple de *template* complet
 
-TODO...
+![template](./demo/assets/template.png)  
+[template.mjml](./demo/template.mjml) : template utilisant différents composants MJML.
 
 ---
 
-</details>
-
 # Testi@ 
+
+Une fois le *template* généré il faut impérativement le tester et c'est ce que propose le site [testi.at](https://testi.at/) grâce à l'aperçu de plus de 90 clients mail sur desktop, mobile et webmail.  
+
+![test](demo/assets/test.png)
+
+## Utilisation
