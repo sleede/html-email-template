@@ -255,5 +255,5 @@ Depuis l'onglet *Settings / Profile*, vous pouvez copier l'adresse et vous conne
 #### Aperçus
 
 Enfin, l'interface de présentation des captures d'écrans permet de visualiser le rendu du mail sur les différents clients.  
-Vous pouvez déplier/replier toutes les fenêtres d'aperçus (1), parfois visualiser le code source (2) et relancer un client (3).
+Vous pouvez déplier/replier toutes les fenêtres d'aperçus (1), parfois visualiser le code source (2) et relancer un client (3).  
 ![preview](demo/assets/test_preview.png)  
