@@ -70,7 +70,7 @@
           </mj-column>
           <mj-column vertical-align="bottom">
             <mj-text align="right" padding="8px" font-size="10px"font-weight="100" font-style="italic">
-              Photo by Paweł Czerwiński on <a href="https://unsplash.com/photos/bX9B9c-YasY" style="color: #184C5F;">Unsplash</a>
+              <a href="https://unsplash.com/photos/bX9B9c-YasY" style="color: #184C5F; text-decoration: none">Photo by Paweł Czerwiński on Unsplash</a>
             </mj-text>            
           </mj-column>
         </mj-group>

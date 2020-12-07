@@ -228,8 +228,32 @@ Utilisez l'attribut `full-width="full-width"` sur la balise `<mj-wrapper>` et po
 
 # Testi@ 
 
-Une fois le *template* généré il faut impérativement le tester et c'est ce que propose le site [testi.at](https://testi.at/) grâce à l'aperçu de plus de 90 clients mail sur desktop, mobile et webmail.  
-
-![test](demo/assets/test.png)
+Une fois le *template* généré il faut **impérativement** le tester et c'est ce que propose le site [testi.at](https://testi.at/) grâce à l'aperçu de plus de 90 clients mail sur desktop, mobile et webmail.  
 
 ## Utilisation
+
+#### Éditeur
+
+Testi@ dispose lui aussi d'un éditeur avec ça preview.  
+Il suffit de créer un nouveau test (1), coller le code html dans l'éditeur (2), sélectionner les clients mail (3) dans la liste et de lancer le test (4).  
+L'interface permet aussi de
+![nouveau test](demo/assets/test_new.png)
+![éditeur](demo/assets/test_editor.png)
+![clients](demo/assets/test_clients.png)  
+
+---
+
+#### Réception d'email
+
+Vous pouvez aussi recevoir des emails sur votre alias de compte.  
+C'est pratique pour tester une campagne **MailChimp** par exemple.  
+Depuis l'onglet *Settings / Profile*, vous pouvez copier l'adresse et vous connecter pour recevoir le mail qui va lancer le test automatiquement.  
+![settings](demo/assets/test_settings.png)  
+
+---
+
+#### Aperçus
+
+Enfin, l'interface de présentation des captures d'écrans permet de visualiser le rendu du mail sur les différents clients.  
+Vous pouvez déplier/replier toutes les fenêtres d'aperçus (1), parfois visualiser le code source (2) et relancer un client (3).
+![preview](demo/assets/test_preview.png)  
