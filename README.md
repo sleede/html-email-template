@@ -219,7 +219,7 @@ Utilisez l'attribut `full-width="full-width"` sur la balise `<mj-wrapper>` et po
 
 ---
 
-#### Exemple de *template* complet
+#### Exemple de *template*
 
 ![template](./demo/assets/template.png)  
 [template.mjml](./demo/template.mjml) : template utilisant différents composants MJML.
