@@ -41,7 +41,29 @@ C'est le moteur MJML qui se charge de compiler le template en HTML.
 - en [ligne de commande](https://github.com/mjmlio/mjml/blob/master/packages/mjml-cli/README.md)
 - dans [Node.js](https://documentation.mjml.io/#inside-node-js)
 - [API](https://mjml.io/api) gratuite
-- \+ les outils développés par la [communauté](https://mjml.io/community)...
+- \+ les outils développés par la [communauté](https://mjml.io/community)...  
+
+Exemple d'intégration dans un projet avec la gem [MJML-Rails](https://github.com/sighmon/mjml-rails) qui permet d'injecter des données dynamiques :
+
+```html
+<!-- ./app/views/user_mailer/_info.html.erb -->
+<mj-text>This is <%= @user.username %></mj-text>
+
+<!-- ./app/views/user_mailer/email.html.mjml -->
+<mjml>
+  <mj-head>
+    <mj-preview>Hello World</mj-preview>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text>Hello World</mj-text>
+        <%= render partial: "info" %>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+```
 
 </details>
 
