@@ -12,10 +12,10 @@
 - [caniemail.com](https://www.caniemail.com/) :vertical_traffic_light:
 - [templates.mailchimp.com](https://templates.mailchimp.com/) :bookmark_tabs:
 - [mailjet.com/resources](https://www.mailjet.com/resources/) :bookmark_tabs:
+- [emailonacid.com/blog](https://www.emailonacid.com/blog/category/email-development/) :bookmark_tabs:
 - [litmus.com/resources](https://www.litmus.com/resources/) :bookmark_tabs:
 - [emailonacid.com/resources](https://www.emailonacid.com/resources/) :bookmark_tabs:
 - [reallygoodemails.com](https://reallygoodemails.com/) :art:
-- [dribbble.com/stories](https://dribbble.com/stories/2020/12/03/email-design-tips) :art:
 
 </details>
 
@@ -256,7 +256,7 @@ Une fois le *template* généré il faut **impérativement** le tester et c'est 
 
 #### Éditeur
 
-Testi@ dispose lui aussi d'un éditeur avec ça preview.  
+Testi@ dispose lui aussi d'un éditeur avec sa preview.  
 Il suffit de créer un nouveau test (1), coller le code html dans l'éditeur (2), sélectionner les clients mail (3) dans la liste et de lancer le test (4).  
 L'interface permet aussi de
 ![nouveau test](demo/assets/test_new.png)
